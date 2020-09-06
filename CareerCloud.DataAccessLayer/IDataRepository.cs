@@ -15,5 +15,6 @@ namespace CareerCloud.DataAccessLayer
         void Update(params T[] items);
         void Remove(params T[] items);
         void CallStoredProc(string name, params Tuple<string, string>[] parameters);
+        
     }
 }

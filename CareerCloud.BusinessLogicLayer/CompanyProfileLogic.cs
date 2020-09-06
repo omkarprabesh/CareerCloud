@@ -34,8 +34,8 @@ namespace CareerCloud.BusinessLogicLayer
                 {
                     exceptions.Add(new ValidationException(600, "Not a valid extension"));
                 }
-                else if ((!poco.CompanyWebsite.EndsWith(".ca")) || (!poco.CompanyWebsite.EndsWith(".com"))
-                    || (!poco.CompanyWebsite.EndsWith(".biz")))
+                else if ((!poco.CompanyWebsite.EndsWith(".ca")) && (!poco.CompanyWebsite.EndsWith(".com"))
+                    && (!poco.CompanyWebsite.EndsWith(".biz")))
                     
                 {
                     exceptions.Add(new ValidationException(600, "Not a valid extension"));
